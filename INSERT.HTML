@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fa7f7797db.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <nav>
+            <img src="images/background.jpg" alt="logo" class="logo">
+            
+            <ul id="sideMenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class=" fas fa-regular fa-circle-xmark" onClick="closeMenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
+    </div>
+    <div class="container">
+            <!-- <nav>
+                <img src="images/background.jpg" alt="logo" class="logo">
+                
+                <ul id="sideMenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class=" fas fa-regular fa-circle-xmark" onClick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav> -->
+            <div class="row">
+                <!-- <div class="col-1"> -->
+                    <div class="header-text">
+                        <P>WEB DEVELOPER</P>
+                        <h1>Hii, I am <span>SAMARTH SRINIVAS</span><br/> from Bengaluru India.</h1>
+                    </div>
+                <!-- </div> -->
+                <!-- <div class="col-2"> -->
+                    <img src="images/profile2.jpg">
+                <!-- </div> -->
+            </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/edit_2.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Hi, I'm Samarth Srinivas, a 2nd-year B.Tech student in BMS institute of technology
+                         , I'm a quick learner and organized individual
+                          eager to contribute to innovative projects. Let's connect!</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onClick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onClick="opentab('experiences')">Experiences</p>
+                        <p class="tab-links" onClick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>CYBER SECURITY</span> (Intermediate)</li> 
+                            <li><span>C++</span> (ADVANCED)</li>
+                            <li><span>C#</span> (Advanced)</li>
+                            <li><span>PYTHON</span> (Intermediate)</li>
+                            <li><span>HTML</span> (intermediate)</li>
+                            <li><span>CSS</span> (Intermediate)</li>
+                            <li><span>JavaScript</span> (Intermediate)</li>
+                            <li><span>ReactJs</span> (Beginner)</li>
+                            <li><span>ARTIFICIAL INTELLIGENCE</span> (Beginner)</li>
+                            <li><span>Mathematics</span> (Advanced)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experiences">
+                        <ul>
+                            <li><span>Intern in PRODIGY INFOTECH, </span><br>MARCH 2024 - APRIL 2024<br>WEB DEVELOPER</li>
+                            <li><span>Intern in COGNIFYZ INFOTECH</span><br>March 2024 - May 2024<br>Worked on WEB DEVELOPMENT</li>
+            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B.TECH EEE 2ND YEAR, CGPA - 8.05/10 82%</span><br>BMS INSTITUTE OF TECHNOLOGY AND MANAGEMENT BENGALURU</li>
+                            <li><span>HIGHER SECONDARY EXAMINATION(10TH)PCMC, CGPA - 8.8/10 91.2%</span><br>NARAYANA PU COLLEGE</li>
+                            <li><span>CBSE(10), CGPA 7.8</span><br>BIS</li>
+                        
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                    
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i>samarthsrinivas23@gmail.com</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                        <a href="www.linkedin.com/in/samarth-srinivas-5781b429a
+
+                        "><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                        
+                    </div>
+                
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Enter your name" required>
+                        <input type="email" name="Email" placeholder="Enter your mail id" required>
+                        <textarea name="Message" rows="5" placeholder="Type your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> 2024. Made with <i class="fa-solid fa-heart"></i></p>
+        </div>
+        <div class="top"><a href="#header"><i class="fa-regular fa-hand-point-up"></i></a></div>
+    </div>     
+    <script type="text/JavaScript" src="index.js"></script>
+</body>
+</html>
